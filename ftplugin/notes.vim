@@ -56,7 +56,8 @@ let b:undo_ftplugin .= ' | execute "iunmap <buffer> @"'
 
 " Automatic completion of tag names should not interrupt the flow of typing,
 " for this we have to change the (unfortunately) global option &completeopt.
-set completeopt+=longest
+" Disabling this for compatibility with ncm2
+" set completeopt+=longest
 
 " Change double-dash to em-dash as it is typed. {{{1
 inoremap <buffer> <expr> -- xolox#notes#insert_em_dash()
